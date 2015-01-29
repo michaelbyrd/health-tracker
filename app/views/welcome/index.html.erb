@@ -2,3 +2,11 @@
 <% @steps.each do |s| %>
   <p><%= s.amount %></p>
 <% end %>
+
+
+<div id="forms">
+  <%= render 'steps/form' %>
+  <%= render 'weights/form' %>
+  <%= render 'meals/form' %>
+  <%= render 'exercises/form' %>
+</div>
