@@ -1,0 +1,9 @@
+<%= form_for @weight do |f| %>
+  <%= f.label :amount %>
+  <%= f.number_field :amount %>
+
+  <%= f.label :unit %>
+  <%= f.select :unit, options_for_select(["lbs", "kg"], "lbs") %>
+
+  <%= f.submit %>
+<% end %>
