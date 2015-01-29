@@ -1,0 +1,13 @@
+<%= form_for @meal do |f| %>
+
+  <%= f.label :amount %>
+  <%= f.number_field :amount %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+
+  <%= f.label :which_meal %>
+  <%= f.select :which_meal, options_for_select(["Breakfast", "Lunch", "Dinner", "Snack"], "Breakfast") %>
+
+  <%= f.submit %>
+<% end %>

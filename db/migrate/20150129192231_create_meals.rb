@@ -3,7 +3,7 @@ class CreateMeals < ActiveRecord::Migration
     create_table :meals do |t|
       t.integer :amount
       t.text :description
-      t.string :type
+      t.string :which_meal
 
       t.timestamps null: false
     end
