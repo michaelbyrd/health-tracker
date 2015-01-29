@@ -1,0 +1,12 @@
+<%= form_for @exercise do |f| %>
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+
+  <%= f.label :calories %>
+  <%= f.number_field :calories %>
+
+  <%= f.label :time %>
+  <%= f.number_field :time %>
+
+  <%= f.submit %>
+<% end %>

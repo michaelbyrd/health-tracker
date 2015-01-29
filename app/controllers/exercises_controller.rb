@@ -1,10 +1,10 @@
-class ExcercisesController < ApplicationController
+class ExercisesController < ApplicationController
   def new
     @exercise = Exercise.new
   end
 
   def create
-    @excercise = Exercise.new(exercise_params)
+    @exercise = Exercise.new(exercise_params)
     if @exercise.save
       redirect_to root_path
     else
